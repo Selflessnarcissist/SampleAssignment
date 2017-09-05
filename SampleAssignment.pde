@@ -2,7 +2,8 @@
 void setup () {
   size (400,400);
   background (0,0,0);
-  loop();
+  frameRate (30);
+  
 }
 
 //Initialize Variables
@@ -22,7 +23,7 @@ void setup () {
   float x3 = -100;
   float y3 = -100;
   float random;
-  float speed = 1.5;
+  float speed = 3;
   int score = -1;
   boolean gameOn = true;
   int enemyCount = -1;
@@ -33,7 +34,7 @@ void setup () {
   
 //Main Method
 void draw () {
-  while (true) {
+  
   
   if (gameOn == true) {
   background (0,0,0);
@@ -51,8 +52,6 @@ void draw () {
   Food (x2,y2);
   Player (x,y);
   
-
-
   if (enemyCount >= 10) {
     Enemy(x3,y3);
   }
@@ -172,7 +171,6 @@ void draw () {
     
     
   }
-}
 }
 
 void Player (int x,int y) {
