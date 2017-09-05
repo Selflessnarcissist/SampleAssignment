@@ -2,7 +2,6 @@
 void setup () {
   size (400,400);
   background (0,0,0);
-  frameRate (60);
   
 }
 
@@ -52,7 +51,7 @@ void draw () {
   Food (x2,y2);
   Player (x,y);
   
-  ellipse (200,200,200,200);
+  //ellipse (200,200,200,200);
 
   if (enemyCount >= 10) {
     Enemy(x3,y3);
