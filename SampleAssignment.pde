@@ -33,6 +33,7 @@ void setup () {
   
 //Main Method
 void draw () {
+  loop ();
   while (true) {
   
   if (gameOn == true) {
