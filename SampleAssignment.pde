@@ -2,7 +2,7 @@
 void setup () {
   size (400,400);
   background (0,0,0);
-  frameRate (30);
+  frameRate (60);
   
 }
 
@@ -23,7 +23,7 @@ void setup () {
   float x3 = -100;
   float y3 = -100;
   float random;
-  float speed = 3;
+  float speed = 1.5;
   int score = -1;
   boolean gameOn = true;
   int enemyCount = -1;
