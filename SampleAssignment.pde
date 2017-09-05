@@ -33,7 +33,7 @@ void setup () {
   
 //Main Method
 void draw () {
-  
+  while (true) {
   
   if (gameOn == true) {
   background (0,0,0);
@@ -172,6 +172,7 @@ void draw () {
     
     
   }
+}
 }
 
 void Player (int x,int y) {
