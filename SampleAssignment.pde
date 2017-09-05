@@ -22,7 +22,7 @@ void setup () {
   float y2 = 200;
   float x3 = -100;
   float y3 = -100;
-  float r;
+  double r;
   float speed = 3;
   int score = -1;
   boolean gameOn = true;
@@ -85,10 +85,10 @@ void draw () {
   }
   
   if (x2-x < 15 && y2-y < 15 && x-x2 < 15 && y-y2 < 15) {
-    r = random (30,370);
-    x2 = r;
-    r = random (30,370);
-    y2 = r;
+    r = (Math.random ())*340+30;
+    x2 = (float)r;
+    r = (Math.random ())*340+30;
+    y2 = (float)r;
     speed += 0.1;
     score += 1;
     enemyCount += 1;
@@ -160,7 +160,7 @@ void draw () {
       y2 = 200;
       x3 = -100;
       y3 = -100;
-      r = random (30,370);
+      r = (Math.random ())*340+30;
       speed = 3;
       score = -1;
       
