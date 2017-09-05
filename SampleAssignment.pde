@@ -2,7 +2,7 @@
 void setup () {
   size (400,400);
   background (0,0,0);
-  
+  loop();
 }
 
 //Initialize Variables
@@ -33,7 +33,6 @@ void setup () {
   
 //Main Method
 void draw () {
-  loop ();
   while (true) {
   
   if (gameOn == true) {
